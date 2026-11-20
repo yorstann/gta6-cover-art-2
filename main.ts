@@ -16,6 +16,13 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-app.ts';
 
+// Vice Frame 2 — the poster cover maker handed in by this program: five panel
+// layouts, five colour grades (Neon Nights is a true teal/magenta split-tone),
+// three procedurally illustrated poster scenes alongside the bundled photos,
+// Anton caption lettering, and PNG export at the three common post sizes.
+const TITLE = 'Vice Frame 2 — GTA-style poster cover maker';
+console.log('Handing in ' + TITLE);
+
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
